@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    margin:5px 0;
+}
+ul{
+    list-style-type: none;
+    display: table-column;
+    border-collapse: collapse;
+    width:90%;
+    background-color: white;
+    color:rgb(136, 134, 141);
+    margin-bottom: 10px;
+}
+ul>li{
+    border:1px solid rgb(175, 173, 180);
+    text-align: center;
+    padding: 10px;
+}
+#container{
+    width:40%;
+    margin:30px auto;
+    background-color: rgb(35, 181, 248);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color:white;
+    padding:15px 0;
+}
+#weather{
+    color:black;
+    text-transform: capitalize;
+}
+#weathersummary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#locbtn{
+    padding:10px;
+    background-color: rgb(69, 140, 233);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 5px rgb(43, 191, 228),0 -2px 5px 5px rgb(5, 185, 230) ;
+    cursor: pointer;
+}
+
+.alert{
+    width:50%;
+    margin:10px auto;
+    color: white;
+    padding:5px 10px;
+    background-color: red;
+    opacity: 0;
+    transition: opacity 1s;
+    height:0;
+    /*transform: scaleY(0);   without any opacity or height set
+      transition:transform 1s; */
+}
+.alertboxtrans{
+   opacity: 1;
+   /* transform:scaleY(1);*/
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modalbox.css">
+
+    <script src="background.js"></script>
+</head>
+<body>
+    <p class="alert"></p>
+    <div id="container">
+        <div id="weathersummary">
+        <p id="citystate">Boston, MA</p>
+        <p id="weather">Partly Cloudy</p>
+        <p id="temp">36 F <span id="celsius">(23.4 C)</span></p>
+        <p id="icon">icon here</p>
+        </div>
+        <ul>
+            <li id="humidity">Humidity:</li>
+            <li id="pressure">Pressure:</li>
+            <li id="feels">Feels Like:</li>
+            <li id="wind">Wind:</li>
+        </ul>
+        <p id="locbtn">Change Location</p>
+    </div>
+    <div id="modalbox">
+        <div id="modalcontent" >
+            <h3>Choose Location<span id="cross">&#10006</span></h3>
+            <form>
+                <label for="city">City</label>
+                <input id="city" type="text" placeholder="Enter City">
+            </form>
+            <footer id="btns">
+                <p id="close">Close</p>
+                <p id="save">Save Changes</p>
+            </footer>
+
+        </div>
+    </div>
+</body>
+</html>
